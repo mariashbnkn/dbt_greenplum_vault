@@ -1,0 +1,25 @@
+
+name: 'gp_flight'
+version: '1.0.0'
+config-version: 2
+
+profile: 'gp_flight'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+
+# models:
+#   gp_dbt:
+vars:
+  raw_flight_data:
+    start_date: '2022-04-16'
+    end_date: '2022-04-17'

@@ -1,0 +1,5 @@
+.venv/
+.vscode/
+gp_flight/target/
+gp_flight/dbt_packages/
+gp_flight/logs/

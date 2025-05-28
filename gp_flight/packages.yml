@@ -1,0 +1,3 @@
+packages:
+  - git: "https://github.com/markporoshin/dbtvault.git"
+    revision: master
