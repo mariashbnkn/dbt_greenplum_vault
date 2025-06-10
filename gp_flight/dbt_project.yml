@@ -16,9 +16,14 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+models:
+  gp_flight:
+    +materialized: table
 
-# models:
-#   gp_dbt:
+    for_tests:  
+      +materialized: table
+      +tags: ["for_tests"]
+
 vars:
   raw_flight_data:
     start_date: '2022-04-16'

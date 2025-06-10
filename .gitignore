@@ -3,3 +3,7 @@
 gp_flight/target/
 gp_flight/dbt_packages/
 gp_flight/logs/
+gp_flight/models_old
+.env
+py_scripts/df/
+py_scripts/sa/

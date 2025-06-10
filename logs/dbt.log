@@ -1,0 +1,14 @@
+[0m13:23:11.470420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd4206ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd3a1c140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd33c9d30>]}
+
+
+============================== 13:23:11.475289 | 5bc17d5c-45d8-4099-9d0e-0fbd3170d93a ==============================
+[0m13:23:11.475289 [info ] [MainThread]: Running with dbt=1.5.10
+[0m13:23:11.476057 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'printer_width': '80', 'introspect': 'True', 'static_parser': 'True', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'quiet': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/home/mary/.dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m13:23:11.476582 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/mary/dbt_gp_flight/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:23:11.477284 [debug] [MainThread]: Command `dbt run` failed at 13:23:11.477146 after 0.02 seconds
+[0m13:23:11.477609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd32ae6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd39d1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3dd32e4230>]}
+[0m13:23:11.478001 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: raw_flight_data
+    columns:
+      - name: legid
+        tests:
+          - not_null
+          
+      - name: flightdate
+        tests:
+          - dbt_utils.expression_is_true: 
+              expression: " >= searchdate"
+          
+      - name: startingairport
+        tests:
+          - dbt_utils.expression_is_true: 
+              expression: " != destinationairport" 
+          
+      - name: totalfare
+        tests:
+          - dbt_utils.expression_is_true: 
+              expression: " >= basefare"
