@@ -27,3 +27,9 @@ python flight_data__for_tests_sa.py
 python flight_data__other_tests_sa.py
 ```
 
+    4 - Greate Expentations
+``` bash
+python flight_data__for_tests_gx.py
+python flight_data__other_tests_gx.py
+```
+

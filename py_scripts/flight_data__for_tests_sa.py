@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 DB_SCHEMA = 'test'
 
+@measure_time
 def init_db_connection():
     DB_HOST = os.getenv('GP_HOST')
     DB_USER = os.getenv('GP_USER')
